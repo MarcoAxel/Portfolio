@@ -14,7 +14,7 @@
         <link rel="manifest" href="./img/favicon/site.webmanifest">
         <link rel="stylesheet" href="./css/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-        <title>0xFolio - Free portfolio template for developers</title>
+        <title>Marcos - Aspiring Data Engineer</title>
     </head>
 
     <body>
@@ -537,7 +537,7 @@
                                     <use xlink:href="img/SVG/symbol-defs.svg#icon-edit"></use>
                                 </svg>
                             </div>
-                            <span class="counter__count">43</span>
+                            <span class="counter__count">2</span>
                             <p class="counter__title">Articles written</p>
                         </div>
                     </div>
@@ -548,7 +548,7 @@
                                     <use xlink:href="img/SVG/symbol-defs.svg#icon-sun"></use>
                                 </svg>
                             </div>
-                            <span class="counter__count">18</span>
+                            <span class="counter__count">22</span>
                             <p class="counter__title">Years lived</p>
                         </div>
                     </div>
@@ -560,28 +560,27 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-8">
                         <h2 class="heading-secondary ">Contact me</h2>
-                        <form>
+                        <form action="https://formspree.io/f/movjwpbo" method="POST">
                             <div class="form-group">
-                                <label for="Username">Username</label>
-                                <input required type="text" class="form-control" id="Username">
+                                <label for="Username">Name</label>
+                                <input required type="text" class="form-control" id="Username" name="username">
                             </div>
                             <div class="form-group">
                                 <label for="Email">Email</label>
-                                <input required type="email" class="form-control" id="Email">
+                                <input required type="email" class="form-control" id="Email" name="email">
                             </div>
                             <div class="form-group">
                                 <label for="subject">Subject</label>
-                                <input required type="text" class="form-control" id="subject">
+                                <input required type="text" class="form-control" id="subject" name="subject">
                             </div>
 
                             <div class="form-group">
                                 <label for="message">Your message</label>
-                                <textarea required type="text" class="form-control" id="message" rows="4"></textarea>
+                                <textarea required type="text" class="form-control" id="message" name="message" rows="4"></textarea>
                             </div>
 
 
-                            <button type="submit" class="mt-2 btn btn--full float-right">Send <svg
-                                    class="icon btn__icon-right">
+                            <button type="submit" class="mt-2 btn btn--full float-right">Send <svg class="icon btn__icon-right">
                                     <use xlink:href="./img/SVG/symbol-defs.svg#icon-paper-plane"></use>
                                 </svg></button>
                         </form>
