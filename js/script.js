@@ -60,3 +60,18 @@ $('#navbarTopCollapsible').on('show.bs.collapse', function () {
 $('#navbarTopCollapsible').on('hide.bs.collapse', function () {
 	$('.navbar-top').removeClass('bg-dark-trans');
 });
+
+// Expandable blog card toggle
+$(document).ready(function () {
+  $('.blog-toggle').on('click', function () {
+    const $details = $(this).closest('.blog__details');
+    const $more = $details.find('.blog-more');
+    if ($more.hasClass('d-none')) {
+      $more.removeClass('d-none');
+      $(this).text('Show less');
+    } else {
+      $more.addClass('d-none');
+      $(this).text('Read more');
+    }
+  });
+});
