@@ -68,7 +68,17 @@
 
 	&__details {
 		margin-bottom: pxToRem(16px);
+		min-height: pxToRem(120); // <-- this line for consistent height
 	}
+
+	&__toggle {
+    	color: #007bff;
+    	cursor: pointer;
+    	font-size: 1em;
+    	background: none;
+    	border: none;
+    	padding: 0;
+  	}
 
 	&__btn {
 		.icon {
